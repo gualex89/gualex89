@@ -8,7 +8,7 @@ header{
     
     width: 100%;
     min-width: 320px;
-    height: 80px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -18,7 +18,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    margin-left: -10px;
     
 }
 .ll{
@@ -27,10 +27,37 @@ header{
    height: 70px; 
     
 }
-
-
-
-
+nav {
+  
+    width:100%;
+    max-height:0px;
+    overflow:hidden;
+    transition: 1s all; 
+    margin-left: -100%;
+    
+    position: static;
+    z-index: 1;
+   
+  }
+ 
+  
+  nav ul {
+    
+    list-style:none;
+  }
+  
+  nav ul li a{
+    
+    
+   text-decoration:none;
+    display:block;
+    line-height:50px;
+    border-bottom:1px solid #222;
+    background-color:#03EBA6;
+    color:#222;
+    font-size:1.2em;
+    padding:10px;
+  }
 
 
 button{
@@ -53,19 +80,47 @@ button > div {
     transform-origin: left;
 }
 
-button:hover div:first-child{
-    transform: rotate(45deg);
-}
-button:hover div:nth-child(2){
-    opacity: 0;
-}
-button:hover div:last-child{
-    transform: rotate(-45deg);
+
+.menu-icon:hover~nav{
+        
+    margin-left: 0;
+    max-height: 300px;
+     
 }
 
 .imagen{
+    position: absolute;
+    z-index: 1;
     width: 100%;
     min-width: 320px;
     max-width: 480px;
-    height: 390px;
+}
+.menu-icon{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.div-button{
+    margin-top: -100px;
+    position: absolute;
+}
+.nav-menu{
+    background-color: aqua;
+    margin-left: -100px;
+    position: absolute;
+    z-index: 2;
+
+}
+.bar-btn{
+    font-size: 25px;
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 10px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .nav-menu{
+    margin-left: 0px;
+   
 }
