@@ -18,12 +18,45 @@ header{
     flex-direction: row;
     flex-wrap: nowrap;
 }
+#icon-whatsapp{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* margin-left: 0px; */
+    
+    /* filter: invert(31%) sepia(59%) saturate(5802%) hue-rotate(286deg) brightness(85%) contrast(80%); */
+    
+}
+#icon-whatsapp:hover{
+    filter: invert(31%) sepia(59%) saturate(5802%) hue-rotate(286deg) brightness(85%) contrast(80%);
+}
+#icon-instagram{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* margin-left: 0px; */
+    
+
+    /* filter: invert(31%) sepia(59%) saturate(5802%) hue-rotate(286deg) brightness(85%) contrast(80%); */
+
+}
+#rrss{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    /* align-self:flex-end; */
+    justify-content: right;
+    margin-right: 20px;
+}
 .contenedorll{
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-self:center;
     justify-content: center;
-    margin-left: -10px;
+    margin-left: 10%;
     
 }
 .ll{
@@ -113,11 +146,11 @@ button > div {
     width: 100%;
     height: 100vh;
     background: rgb(255, 255, 255, .50);
-    margin-left: -450px;
+    margin-left: -1500px;
     position: absolute;
     z-index: 2;
     text-align: center;
-    transition: all .5s;
+    transition: all 1.1s;
 
 }
 .bar-btn{
