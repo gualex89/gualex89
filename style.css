@@ -195,6 +195,7 @@ button > div {
     /* font-family: 'Norican', cursive; */
     text-align: center;
     color: var(--principal-mirame) ;
+    margin-top: 0;
 
 }
 
